@@ -1,4 +1,4 @@
-package com.mteng.controler;
+package com.mteng.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

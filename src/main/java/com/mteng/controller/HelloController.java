@@ -5,19 +5,14 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/**
- * A Hello World controller example modified from mkyong website. 
- * @author mteng
- *
- */
 @Controller
-@RequestMapping("/welcome")
+@RequestMapping("/")
 public class HelloController {
 
 	@RequestMapping(method = RequestMethod.GET)
 
 	public String printWelcome(ModelMap model) {
-		model.addAttribute("message", "Spring 3 MVC Hello World");
+		model.addAttribute("message", "This is the landing page under construction.");
 		return "hello";
 	}
 }

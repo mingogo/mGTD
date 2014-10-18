@@ -7,5 +7,7 @@ SpringMVC does not work. 404.
 		- In src/main/
 		...
 	2. In the mvc-dispatcher-servlet.xml, make sure to check:
-		- <context:component-scan base-package="com.mteng.controller" />
+	'''java
+		<context:component-scan base-package="com.mteng.controller" />
+	'''
 

@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.mteng.model.Shop;
+import com.mteng.vo.gtd.Shop;
 
 /**
  * The json integrated with SpringMVC sample from Mkyong. 

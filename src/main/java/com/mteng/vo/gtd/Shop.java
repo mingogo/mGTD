@@ -1,4 +1,4 @@
-package com.mteng.model;
+package com.mteng.vo.gtd;
 
 public class Shop {
 

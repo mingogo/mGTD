@@ -1,4 +1,5 @@
 #mteng GTD project
+
 ##GOAL:
 To create a SpringMVC based project using MongoLab to store and process my personal entries.
 
@@ -13,3 +14,4 @@ To create a SpringMVC based project using MongoLab to store and process my perso
 * Added Spring RESTful Supports. 
 * Added JSON supports.
 * Added Mongo DB support.
+* Added Mongo DB support with new MongoDB collection gtd1.

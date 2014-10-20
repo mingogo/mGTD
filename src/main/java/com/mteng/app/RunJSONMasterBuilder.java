@@ -1,7 +1,7 @@
 package com.mteng.app;
 
 import com.mteng.util.PrettyPrints;
-import com.mteng.vo.updatedJSON.builder.JSONMasterBuilder;
+import com.mteng.vo.gtd.builder.*;
 
 public class RunJSONMasterBuilder {
 	public static void main(String[] args) {

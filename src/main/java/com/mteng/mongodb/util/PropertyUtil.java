@@ -18,8 +18,7 @@ public class PropertyUtil {
 
 	private static PropertyUtil propertyUtil = null;
 	private PropertiesConfiguration propertiesConfiguration = null;
-	// private String environment = null;
-	private String environment = "dev";
+	private String environment = "gtd";
 
 	private PropertyUtil() throws ConfigurationException {
 
@@ -62,6 +61,8 @@ public class PropertyUtil {
 
 		if (environment.equals("dev")) {
 			propertiesConfiguration = new PropertiesConfiguration("dev/fitch-rnp.properties");
+		} else if (environment.equals("gtd")) {
+			propertiesConfiguration = new PropertiesConfiguration("gtd/gtd.mongolab.properties");
 		} else if (environment.equals("qa")) {
 			propertiesConfiguration = new PropertiesConfiguration("qa/fitch-rnp.properties");
 		} else if (environment.equals("prod")) {

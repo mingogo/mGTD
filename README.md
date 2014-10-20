@@ -12,3 +12,4 @@ To create a SpringMVC based project using MongoLab to store and process my perso
 ##DONE:
 * create a template Spring MVC template project.
 * Added Spring RESTful Supports. 
+* Added JSON supports.

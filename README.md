@@ -18,3 +18,5 @@ To create a SpringMVC based project using MongoLab to store and process my perso
 * Added Modified the JSON example from mkyong to return my own value object. 
 * Added controllers to add and list mongoLab entries.
 * Added a controller that is able to list the arraylist fetched from MongoLab.
+* Updated the controller so we can fetch data from url and add it to MongoLab
+* Added a link so it can list the resulting entries. 

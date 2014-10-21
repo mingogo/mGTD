@@ -11,7 +11,7 @@
 	<h1>mGTD : Add Entries. </h1>
 	<h2>[mteng] Name : ${name}</h2>
 	<h2>[mteng] Body : ${body}</h2>
-	<a href="<c:url value="/gtd/list"/>"> Click me to see the result. </a>
+	<a href="/mGTD/gtd/list">See results.</a>
 
 </body>
 </html>

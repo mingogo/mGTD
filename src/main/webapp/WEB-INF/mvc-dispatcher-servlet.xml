@@ -34,6 +34,6 @@
 	</bean>
 
 	<bean id="welcomeController" class="com.mteng.controller.HelloController" />
-	<bean id="GTDController" class="com.mteng.controller.GTDController" />
+	<bean id="GTDController" class="com.mteng.controller.rest.service.GTDController" />
 
 </beans>

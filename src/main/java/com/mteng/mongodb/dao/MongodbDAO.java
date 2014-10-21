@@ -1,6 +1,7 @@
 package com.mteng.mongodb.dao;
 
 import java.awt.List;
+import java.util.ArrayList;
 
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
@@ -34,14 +35,12 @@ public class MongodbDAO {
 		} 
 	};
 
-	public List fetchEntries(){
-		List output = new List();
+	public ArrayList<String> fetchEntries(){
+		ArrayList<String> output = new ArrayList<String>();
 		DBCursor cursorDoc = coll.find();
 		DBObject item = null;
 		while (cursorDoc.hasNext()) { 
-			// System.out.println(cursorDoc.next());
 			item = cursorDoc.next();
-			item.toString();
 			output.add(item.toString());
 		}
 		return output;

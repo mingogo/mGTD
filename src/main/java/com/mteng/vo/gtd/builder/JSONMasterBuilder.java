@@ -4,24 +4,18 @@ import com.mteng.util.ObjectToJSON;
 import com.mteng.vo.gtd.*;
 
 public class JSONMasterBuilder {
-	public String resultingJSON(){
 
-		MasterJSON masterJSON = new MasterJSON();
-/*		EntityBuilder entityBuilder = new EntityBuilder();
-		FinalRatingsBuilder finalRatingsBuilder  = new FinalRatingsBuilder();
-		PeersBuilder peersBuilder = new PeersBuilder();*/
+	public String resultingJSON_inString(){
 		ObjectToJSON objectToJSON = new ObjectToJSON();
-
-		masterJSON.setEntryName("TEsting name");
-		masterJSON.setEntryBody("Testing body.");
-/*		masterJSON.setEntity(entityBuilder.result());
-		masterJSON.setFinalRatings(finalRatingsBuilder.result());
-		masterJSON.setPeers(peersBuilder.result());*/
-
-		/**
-		 * Convert the MasterJsonObject to JSON
-		 */
+		Object masterJSON = resultingJSON_inObject();
 		String output = (String) objectToJSON.convertedJSON(masterJSON);
 		return output;
+	}
+
+	public Object resultingJSON_inObject(){
+		MasterJSON masterJSON = new MasterJSON();
+		masterJSON.setEntryName("Testing name");
+		masterJSON.setEntryBody("Testing body.");
+		return masterJSON;
 	}
 }

@@ -9,7 +9,7 @@ public class AddDocuments {
 		MongodbDAO mongodbDAO = new MongodbDAO();
 		JSONMasterBuilder builder = new JSONMasterBuilder();
 
-		mongodbDAO.addData((String) builder.resultingJSON());
+		mongodbDAO.addData((String) builder.resultingJSON_inString());
 		mongodbDAO.documentsCounter();
 	};
 }

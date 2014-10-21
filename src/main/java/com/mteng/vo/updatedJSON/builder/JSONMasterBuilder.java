@@ -9,22 +9,37 @@ public class JSONMasterBuilder {
 	 * @return Completed JSON, a regular POJO. 
 	 */
 	// public Object resultingJSON(){
-	public String resultingJSON(){
+	public String resultingJSONinString(){
 
-		MasterJSON masterJSON = new MasterJSON();
+		ObjectToJSON objectToJSON = new ObjectToJSON();
+/*		MasterJSON masterJSON = new MasterJSON();
 		EntityBuilder entityBuilder = new EntityBuilder();
 		FinalRatingsBuilder finalRatingsBuilder  = new FinalRatingsBuilder();
 		PeersBuilder peersBuilder = new PeersBuilder();
-		ObjectToJSON objectToJSON = new ObjectToJSON();
 
 		masterJSON.setEntity(entityBuilder.result());
 		masterJSON.setFinalRatings(finalRatingsBuilder.result());
-		masterJSON.setPeers(peersBuilder.result());
+		masterJSON.setPeers(peersBuilder.result());*/
 
+		Object masterJSON = resultingJSONinObject();
 		/**
 		 * Convert the MasterJsonObject to JSON
 		 */
 		String output = (String) objectToJSON.convertedJSON(masterJSON);
 		return output;
+	}
+
+	public Object resultingJSONinObject(){
+
+		MasterJSON masterJSON = new MasterJSON();
+		EntityBuilder entityBuilder = new EntityBuilder();
+		FinalRatingsBuilder finalRatingsBuilder  = new FinalRatingsBuilder();
+		PeersBuilder peersBuilder = new PeersBuilder();
+
+		masterJSON.setEntity(entityBuilder.result());
+		masterJSON.setFinalRatings(finalRatingsBuilder.result());
+		masterJSON.setPeers(peersBuilder.result());
+
+		return masterJSON;
 	}
 }

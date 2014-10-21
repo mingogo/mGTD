@@ -17,16 +17,12 @@ import com.mteng.vo.gtd.Shop;
 @Controller
 @RequestMapping("/kfc/brands")
 public class JSONController {
-
 	@RequestMapping(value = "{name}", method = RequestMethod.GET)
 	public @ResponseBody
 	Shop getShopInJSON(@PathVariable String name) {
-
 		Shop shop = new Shop();
 		shop.setName(name);
 		shop.setStaffName(new String[] { "mkyong1", "mkyong2" });
-
 		return shop;
-
 	}
 }

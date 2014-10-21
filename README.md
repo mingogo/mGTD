@@ -15,3 +15,4 @@ To create a SpringMVC based project using MongoLab to store and process my perso
 * Added JSON supports.
 * Added Mongo DB support.
 * Added Mongo DB support with new MongoDB collection gtd1.
+* Added Modified the JSON example from mkyong to return my own value object. 

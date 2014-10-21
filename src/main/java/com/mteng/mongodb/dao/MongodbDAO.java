@@ -1,5 +1,7 @@
 package com.mteng.mongodb.dao;
 
+import java.awt.List;
+
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
@@ -31,6 +33,19 @@ public class MongodbDAO {
 			}
 		} 
 	};
+
+	public List fetchEntries(){
+		List output = new List();
+		DBCursor cursorDoc = coll.find();
+		DBObject item = null;
+		while (cursorDoc.hasNext()) { 
+			// System.out.println(cursorDoc.next());
+			item = cursorDoc.next();
+			item.toString();
+			output.add(item.toString());
+		}
+		return output;
+	}
 
 	/**
 	 * List the documents in MongoLab. User choose if the documents are pretty printed. Default is not. 

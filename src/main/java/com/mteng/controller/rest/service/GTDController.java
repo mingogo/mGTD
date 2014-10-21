@@ -1,4 +1,4 @@
-package com.mteng.controller;
+package com.mteng.controller.rest.service;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;

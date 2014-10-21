@@ -10,6 +10,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
 
 	<context:component-scan base-package="com.mteng.controller" />
+	<context:component-scan base-package="com.mteng.rest.service" />
 	<mvc:annotation-driven />
 
 	<bean
@@ -27,9 +28,12 @@
 		<props>
 		   <prop key="/welcome.htm">welcomeController</prop>
 		   <prop key="/*/welcome.htm">welcomeController</prop>
+		   <prop key="/asdf.htm">GTDController</prop>
 		 </props>
 	   </property>
 	</bean>
+
 	<bean id="welcomeController" class="com.mteng.controller.HelloController" />
+	<bean id="GTDController" class="com.mteng.controller.GTDController" />
 
 </beans>

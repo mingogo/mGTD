@@ -38,4 +38,15 @@ public class ObjectToJSON {
 		// System.out.println(output);
 		return output;
 	};
+
+	public String convertedJSON_inString(Object input) throws JsonGenerationException, JsonMappingException, IOException{
+
+		ObjectMapper mapper = new ObjectMapper();
+		Object output = null;
+
+		output = mapper.writeValueAsString(input);
+		String outputString = (String) output;
+
+		return outputString;
+	};
 }

@@ -1,2 +1,7 @@
-/target/
-/bin/
+target/
+bin/
+.idea/
+mGTD.iml
+.classpath
+.project
+.settings/
